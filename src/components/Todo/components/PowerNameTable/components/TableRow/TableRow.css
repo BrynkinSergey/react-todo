@@ -1,0 +1,52 @@
+.table__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    width: 100%;
+
+    border-bottom: 1px solid black;
+}
+
+.table__row:last-child {
+    border-bottom: 0;
+}
+
+.table__cell {
+    border-collapse: collapse;
+    display: flex;
+    flex-grow: 1;
+    height: 20px;
+
+    border-left: 1px black solid;
+}
+
+.table__cell:first-child {
+    border-left: 0;
+}
+
+.table__row > .table__cell:nth-child(1) {
+    width: 10%;
+}
+
+.table__row > .table__cell:nth-child(2) {
+    width: 30%;
+}
+
+.table__row > .table__cell:nth-child(3) {
+    width: 30%;
+}
+
+.table__row > .table__cell:nth-child(4) {
+    width: 30%;
+}
+
+.deleteRowButton {
+    position: absolute;
+    right: 5px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    padding: 0 5px;
+}

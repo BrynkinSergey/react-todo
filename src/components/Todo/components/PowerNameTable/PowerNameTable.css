@@ -1,0 +1,16 @@
+.table {
+    border: black 1px solid;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    max-width: 960px;
+}
+
+.table__header {
+    font-weight: bold;
+}
