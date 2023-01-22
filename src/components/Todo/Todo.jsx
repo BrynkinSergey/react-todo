@@ -6,7 +6,7 @@ import {useState} from "react";
 
 export const Todo = () => {
     const [tableContent, setTableContent] = useState([])
-    const [tableHeaders, __setTableHeaders] = useState(['№', 'Name', 'Power', 'Status'])
+    const [tableHeaders] = useState(['№', 'Name', 'Power', 'Status'])
 
     return <div className="todo">
         <Title titleName="Таблица силы и статуса"/>
