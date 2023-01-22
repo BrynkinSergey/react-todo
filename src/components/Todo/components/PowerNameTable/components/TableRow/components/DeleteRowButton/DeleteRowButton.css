@@ -2,7 +2,8 @@
     position: absolute;
     right: 5px;
     border-radius: 50%;
-    background-color: black;
-    color: white;
-    padding: 0 5px;
+    background-color: red;
+    padding: 0 4px;
+    color: black;
+    border: 1px black solid;
 }
