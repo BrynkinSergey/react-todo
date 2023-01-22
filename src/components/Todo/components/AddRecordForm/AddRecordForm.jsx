@@ -8,7 +8,8 @@ export const AddRecordForm = ({setTableContent, tableContent}) => {
     const [secondInputValue, setSecondInputValue] = useState('')
 
     const handleClick = () => {
-        setTableContent([...tableContent, [tableContent.length + 1, firstInputValue, secondInputValue, 'active']])
+        const newNumber = tableContent.length ? tableContent[tableContent.length - 1][0] + 1 : 1;
+        setTableContent([...tableContent, [newNumber, firstInputValue, secondInputValue, 'active']])
         setFirstInputValue('')
         setSecondInputValue('')
     }

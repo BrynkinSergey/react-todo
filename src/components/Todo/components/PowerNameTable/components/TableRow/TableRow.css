@@ -41,12 +41,3 @@
 .table__row > .table__cell:nth-child(4) {
     width: 30%;
 }
-
-.deleteRowButton {
-    position: absolute;
-    right: 5px;
-    border-radius: 50%;
-    background-color: black;
-    color: white;
-    padding: 0 5px;
-}

@@ -1,7 +1,8 @@
 import './TableRow.css'
 import {useState} from "react";
+import {DeleteRowButton} from "./components/DeleteRowButton";
 
-export const TableRow = ({cells}) => {
+export const TableRow = ({cells, deleteRow}) => {
     const [isShownButton, setIsShowButton] = useState(false)
 
     return <div className="table__row"
@@ -10,6 +11,6 @@ export const TableRow = ({cells}) => {
         {cells?.map((cell, i) => <div
             key={`cell-${i}`}
             className="table__cell">{cell}</div>)}
-        {isShownButton && <div className="deleteRowButton">X</div>}
+        {isShownButton && <DeleteRowButton deleteRow={deleteRow} toDeleteRowId={cells[0]}/>}
     </div>
 }
