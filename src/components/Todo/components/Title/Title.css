@@ -1,5 +1,9 @@
 .title {
     color: #30dcb6;
-    font-size: 36px;
+    font-size: 48px;
     margin: 12px 0 16px 0;
+    text-align: center;
+    width: 40%;
+    max-width: 480px;
+    border-bottom: 3px solid #696969;
 }
