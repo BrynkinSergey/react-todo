@@ -17,7 +17,6 @@ export const Todo = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            const tt = JSON.parse(localStorage.getItem('tableComponent'))
             localStorage.setItem('tableComponent', JSON.stringify(tableContent))
         }, 0)
     }, [tableContent])
