@@ -41,3 +41,13 @@
 .table__row > .table__cell:nth-child(4) {
     width: 30%;
 }
+
+.moreButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    width: 45px;
+    height: 20px;
+}

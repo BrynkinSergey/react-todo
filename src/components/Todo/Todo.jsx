@@ -8,17 +8,20 @@ export const Todo = () => {
     const [tableContent, setTableContent] = useState([])
     const [tableHeaders] = useState(['№', 'Дело', 'Описание', 'Статус'])
 
-    const deleteRow = (rowId) => {
-        const newTableContent = tableContent.filter((element) => {
-            return element.id !== rowId
-        })
+    const deleteRow = (rowId) => setTableContent(tableContent.filter((element) => element.id !== rowId));
 
-        setTableContent(newTableContent);
+
+    const changeStatus = (rowId) => {
+        const newTableContent = JSON.parse(JSON.stringify(tableContent))
+        const rowIndex = newTableContent.findIndex((element) => element.id === rowId)
+        newTableContent[rowIndex].status = newTableContent[rowIndex].status === 'active' ? 'done' : 'active'
+        setTableContent(newTableContent)
     }
 
     return <div className="todo">
         <Title titleName="Список дел"/>
         <AddRecordForm setTableContent={setTableContent} tableContent={tableContent}></AddRecordForm>
-        <PowerNameTable deleteRow={deleteRow} tableHeaders={tableHeaders} tableContent={tableContent}/>
+        <PowerNameTable changeStatus={changeStatus} deleteRow={deleteRow} tableHeaders={tableHeaders}
+                        tableContent={tableContent}/>
     </div>
 }
