@@ -15,9 +15,9 @@ export const AddRecordForm = ({setTableContent, tableContent}) => {
     }
 
     return <div className="form">
-        <AddRecordInput inputState={firstInputValue} setInputState={setFirstInputValue} placeholder="Type name..."/>
+        <AddRecordInput inputState={firstInputValue} setInputState={setFirstInputValue} placeholder="Дело"/>
         <AddRecordInput inputState={secondInputValue} setInputState={setSecondInputValue}
-                        placeholder="Type power..."/>
-        <AddRecordButton buttonText="Add" onClick={handleClick}/>
+                        placeholder="Описание"/>
+        <AddRecordButton buttonText="Добавить" onClick={handleClick}/>
     </div>
 }

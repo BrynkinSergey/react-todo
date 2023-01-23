@@ -16,7 +16,7 @@ export const Todo = () => {
     }
 
     return <div className="todo">
-        <Title titleName="Таблица силы и статуса"/>
+        <Title titleName="Список дел"/>
         <AddRecordForm setTableContent={setTableContent} tableContent={tableContent}></AddRecordForm>
         <PowerNameTable deleteRow={deleteRow} tableHeaders={tableHeaders} tableContent={tableContent}/>
     </div>
