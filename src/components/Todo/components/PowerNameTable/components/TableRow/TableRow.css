@@ -14,10 +14,13 @@
 }
 
 .table__cell {
-    border-collapse: collapse;
-    display: flex;
     flex-grow: 1;
-    height: 40px;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    height: initial;
+    text-align: center;
 
     border-left: 1px black solid;
 }
