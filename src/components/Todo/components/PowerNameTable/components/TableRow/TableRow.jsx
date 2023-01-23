@@ -5,9 +5,11 @@ import {OptionsButton} from "./components/OptionsButton";
 import {DoneButton} from "./components/DoneButton";
 
 export const TableRow = ({changeStatus, cells, deleteRow}) => {
-    const [shownContent, setShownContent] = useState(null)
+    const [shownContent, setShownContent] = useState(null);
 
-    return <div className="table__row"
+    const bgStyleName = cells.status === 'active' ? 'activeRow' : 'doneRow';
+
+    return <div className={'table__row ' + bgStyleName}
                 onMouseEnter={() => !shownContent ? setShownContent('options') : shownContent}
                 onMouseLeave={() => setShownContent(null)}>
         {Object.values(cells)?.map((cell, i) => {
