@@ -1,3 +1,7 @@
+body {
+    background-color: #151515;
+}
+
 .todo {
     display: flex;
     justify-content: center;

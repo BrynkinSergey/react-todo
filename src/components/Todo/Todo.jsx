@@ -36,4 +36,5 @@ export const Todo = () => {
         <PowerNameTable changeStatus={changeStatus} deleteRow={deleteRow} tableHeaders={tableHeaders}
                         tableContent={tableContent}/>
     </div>
+
 }

@@ -3,10 +3,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: #242625;
+    color: #cacccb;
 
     width: 100%;
 
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #323433;
 }
 
 .table__row:last-child {
@@ -14,6 +16,7 @@
 }
 
 .table__cell {
+    padding: 8px;
     flex-grow: 1;
     min-height: 20px;
     display: flex;
@@ -23,7 +26,7 @@
     text-align: center;
     overflow-x: hidden;
 
-    border-left: 1px black solid;
+    border-left: 1px #323433 solid;
 }
 
 .table__cell:first-child {
@@ -31,7 +34,10 @@
 }
 
 .table__row > .table__cell:nth-child(1) {
+    font-weight: bold;
     width: 10%;
+    color: #3acab5;
+    background-color: #151515;
 }
 
 .table__row > .table__cell:nth-child(2) {
@@ -60,5 +66,5 @@
 }
 
 .doneRow {
-    background-color: lightgreen;
+    background-color: #495B6F;
 }

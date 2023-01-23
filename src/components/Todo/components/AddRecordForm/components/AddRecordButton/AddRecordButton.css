@@ -1,6 +1,21 @@
 .button {
     width: 100px;
     height: fit-content;
+    cursor: pointer;
+
+    text-align: center;
+    border: 1px solid #041b11;
+
+    background-color: #3adcb5;
+    color: #041b11;
 
     margin: 5px 10px;
+}
+
+.button:hover {
+    background-color: #3acab5;
+}
+
+.button:active {
+    transform: scale(0.95);
 }

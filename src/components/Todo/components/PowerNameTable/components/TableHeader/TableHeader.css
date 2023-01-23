@@ -1,3 +1,8 @@
 .table__header {
     font-weight: bold;
 }
+
+.table__header-cell {
+    color: #3acab5;
+    background-color: #151515;
+}
