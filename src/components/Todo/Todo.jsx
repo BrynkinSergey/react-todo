@@ -6,7 +6,7 @@ import {useState} from "react";
 
 export const Todo = () => {
     const [tableContent, setTableContent] = useState([])
-    const [tableHeaders] = useState(['№', 'Name', 'Power', 'Status'])
+    const [tableHeaders] = useState(['№', 'Дело', 'Описание', 'Статус'])
 
     const deleteRow = (rowId) => {
         console.log(tableContent)
