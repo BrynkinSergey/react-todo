@@ -9,9 +9,13 @@ export const Todo = () => {
     const [tableHeaders] = useState(['№', 'Дело', 'Описание', 'Статус'])
 
     const deleteRow = (rowId) => {
-        console.log(tableContent)
-        const newTableContent = tableContent.filter((element) => element[0] !== rowId)
-        console.log(newTableContent)
+        console.log('....tableContent', tableContent)
+        console.log('....rowId', rowId)
+        const newTableContent = tableContent.filter((element) => {
+            console.log('....element', element)
+            return element.id !== rowId
+        })
+
         setTableContent(newTableContent);
     }
 

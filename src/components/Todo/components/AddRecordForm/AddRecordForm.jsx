@@ -8,8 +8,13 @@ export const AddRecordForm = ({setTableContent, tableContent}) => {
     const [secondInputValue, setSecondInputValue] = useState('')
 
     const handleClick = () => {
-        const newNumber = tableContent.length ? tableContent[tableContent.length - 1][0] + 1 : 1;
-        setTableContent([...tableContent, [newNumber, firstInputValue, secondInputValue, 'active']])
+        const newNumber = tableContent.length ? tableContent[tableContent.length - 1].id + 1 : 1;
+        setTableContent([...tableContent, {
+            id: newNumber,
+            todoName: firstInputValue,
+            todoDescription: secondInputValue,
+            status: 'active'
+        }])
         setFirstInputValue('')
         setSecondInputValue('')
     }
