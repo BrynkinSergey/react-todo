@@ -21,6 +21,7 @@
     align-self: stretch;
     height: initial;
     text-align: center;
+    overflow-x: hidden;
 
     border-left: 1px black solid;
 }
