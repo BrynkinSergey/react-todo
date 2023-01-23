@@ -4,7 +4,6 @@ import {DeleteRowButton} from "./components/DeleteRowButton";
 
 export const TableRow = ({cells, deleteRow}) => {
     const [isShownButton, setIsShowButton] = useState(false)
-    console.log('....cells', cells)
 
     return <div className="table__row"
                 onMouseEnter={() => setIsShowButton(true)}
